@@ -8,7 +8,7 @@ user = "" #enter your facebook username
 pwd = ""  #enter your password
 
 #we are initialising Chrome by making an object of it
-driver = webdriver.Firefox()
+driver = webdriver.Chrome(executable_path= r'.\\driver\\chromedriver.exe')
 
 #The "driver.get method" will explore to a page given by the URL.WebDriver will hold up until the page has completely been loaded (that is, the "onload" occasion has let go), before returning control to your test or script.
 driver.get("http://www.facebook.com")
@@ -31,4 +31,4 @@ elem.send_keys(pwd)
 elem.send_keys(Keys.RETURN)
 
 #closes
-driver.close()
+#driver.close()
